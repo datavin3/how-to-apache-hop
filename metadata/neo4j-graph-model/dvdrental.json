@@ -1,7 +1,7 @@
 {
   "relationships": [
     {
-      "nodeSource": "Actor",
+      "nodeSource": "Film",
       "name": "BELONGS_TO",
       "description": "",
       "nodeTarget": "Category",
