@@ -22,7 +22,7 @@
   </notepads>
   <order>
     <hop>
-      <from>read-film</from>
+      <from>read-labels</from>
       <to>build-cypher-query</to>
       <enabled>Y</enabled>
     </hop>
@@ -126,7 +126,7 @@ cypher = 'MATCH (n:' + label + ') RETURN n;';</jsScript_script>
     </GUI>
   </transform>
   <transform>
-    <name>read-film</name>
+    <name>read-labels</name>
     <type>Neo4jCypherOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -136,13 +136,17 @@ cypher = 'MATCH (n:' + label + ') RETURN n;';</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <batch_size/>
     <connection>neo4j-connection</connection>
     <cypher>CALL db.labels;</cypher>
+    <cypher_field/>
     <cypher_from_field>N</cypher_from_field>
     <mappings>
 </mappings>
+    <nr_retries_on_error/>
     <read_only>N</read_only>
     <retry>Y</retry>
+    <return_graph_field/>
     <returning_graph>N</returning_graph>
     <returns>
       <return>
@@ -152,6 +156,7 @@ cypher = 'MATCH (n:' + label + ') RETURN n;';</jsScript_script>
       </return>
     </returns>
     <unwind>N</unwind>
+    <unwind_map/>
     <attributes/>
     <GUI>
       <xloc>128</xloc>

@@ -33,11 +33,11 @@
   <order>
     <hop>
       <from>get-cypher</from>
-      <to>read-film</to>
+      <to>read-node-data</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>read-film</from>
+      <from>read-node-data</from>
       <to>write-nodes-csv</to>
       <enabled>Y</enabled>
     </hop>
@@ -65,12 +65,12 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>48</xloc>
-      <yloc>128</yloc>
+      <xloc>64</xloc>
+      <yloc>80</yloc>
     </GUI>
   </transform>
   <transform>
-    <name>read-film</name>
+    <name>read-node-data</name>
     <type>Neo4jCypherOutput</type>
     <description/>
     <distribute>N</distribute>
@@ -80,13 +80,17 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <batch_size/>
     <connection>neo4j-connection</connection>
+    <cypher/>
     <cypher_field>cypher</cypher_field>
     <cypher_from_field>Y</cypher_from_field>
     <mappings>
 </mappings>
+    <nr_retries_on_error/>
     <read_only>N</read_only>
     <retry>Y</retry>
+    <return_graph_field/>
     <returning_graph>N</returning_graph>
     <returns>
       <return>
@@ -96,10 +100,11 @@
       </return>
     </returns>
     <unwind>N</unwind>
+    <unwind_map/>
     <attributes/>
     <GUI>
-      <xloc>240</xloc>
-      <yloc>128</yloc>
+      <xloc>256</xloc>
+      <yloc>80</yloc>
     </GUI>
   </transform>
   <transform>
@@ -159,8 +164,8 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>464</xloc>
-      <yloc>128</yloc>
+      <xloc>480</xloc>
+      <yloc>80</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
