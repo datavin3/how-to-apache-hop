@@ -27,7 +27,7 @@
   </notepads>
   <order>
     <hop>
-      <from>get-cypher</from>
+      <from>get-label</from>
       <to>read-properties</to>
       <enabled>Y</enabled>
     </hop>
@@ -338,7 +338,7 @@ cypher_query='MATCH (n:' + label + ') return ' + properties + ';';
     </GUI>
   </transform>
   <transform>
-    <name>get-cypher</name>
+    <name>get-label</name>
     <type>GetVariable</type>
     <description/>
     <distribute>Y</distribute>
