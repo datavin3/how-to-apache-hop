@@ -42,11 +42,11 @@
     </hop>
     <hop>
       <from>remove-quotation-marks</from>
-      <to>unique films</to>
+      <to>unique-films</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>unique films</from>
+      <from>unique-films</from>
       <to>write-film-data</to>
       <enabled>Y</enabled>
     </hop>
@@ -124,7 +124,7 @@
     </GUI>
   </transform>
   <transform>
-    <name>unique films</name>
+    <name>unique-films</name>
     <type>UniqueRowsByHashSet</type>
     <description/>
     <distribute>Y</distribute>
@@ -143,39 +143,6 @@
       </field>
       <field>
         <name>title</name>
-      </field>
-      <field>
-        <name>description</name>
-      </field>
-      <field>
-        <name>release_year</name>
-      </field>
-      <field>
-        <name>language_id</name>
-      </field>
-      <field>
-        <name>rental_duration</name>
-      </field>
-      <field>
-        <name>actor_id</name>
-      </field>
-      <field>
-        <name>length</name>
-      </field>
-      <field>
-        <name>replacement_cost</name>
-      </field>
-      <field>
-        <name>rating</name>
-      </field>
-      <field>
-        <name>film_last_update</name>
-      </field>
-      <field>
-        <name>special_features</name>
-      </field>
-      <field>
-        <name>fulltext</name>
       </field>
     </fields>
     <attributes/>
