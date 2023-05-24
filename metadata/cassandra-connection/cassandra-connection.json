@@ -1,0 +1,13 @@
+{
+  "keyspace": "",
+  "hostname": "localhost",
+  "password": "cassandra",
+  "schemaPort": "",
+  "localDataCenter": "system",
+  "port": "9042",
+  "schemaHostname": "",
+  "name": "cassandra-connection",
+  "socketTimeout": "",
+  "username": "cassandra",
+  "usingCompression": false
+}
