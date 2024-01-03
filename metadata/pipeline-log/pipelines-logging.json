@@ -1,0 +1,11 @@
+{
+  "pipelinesToLog": [],
+  "loggingParentsOnly": false,
+  "name": "pipelines-logging",
+  "intervalInSeconds": "30",
+  "executingPeriodically": false,
+  "pipelineFilename": "${PROJECT_HOME}/hop/logging/dvdrental-piplog.hpl",
+  "executingAtEnd": true,
+  "enabled": true,
+  "executingAtStart": true
+}
