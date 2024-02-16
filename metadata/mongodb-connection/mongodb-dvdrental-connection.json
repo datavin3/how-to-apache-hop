@@ -1,0 +1,20 @@
+{
+  "authenticationDatabaseName": "",
+  "usingKerberos": false,
+  "journaled": true,
+  "dbName": "${MONGODB_DVDRENTAL_DATABASE}",
+  "authenticationUser": "",
+  "connectTimeoutMs": "",
+  "writeConcern": "",
+  "authenticationPassword": "Encrypted ",
+  "usingAllReplicaSetMembers": false,
+  "usingSslSocketFactory": false,
+  "replicationTimeoutMs": "",
+  "hostname": "${MONGODB_DVDRENTAL_SERVER}",
+  "port": "${MONGODB_DVDRENTAL_PORT}",
+  "name": "mongodb-dvdrental-connection",
+  "readPreference": "PRIMARY",
+  "socketTimeoutMs": "",
+  "readPrefTagSets": "",
+  "authenticationMechanism": "PLAIN"
+}

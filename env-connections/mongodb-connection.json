@@ -1,0 +1,15 @@
+{
+  "variables" : [ {
+    "name" : "MONGODB_DVDRENTAL_SERVER",
+    "value" : "localhost",
+    "description" : ""
+  }, {
+    "name" : "MONGODB_DVDRENTAL_DATABASE",
+    "value" : "dvdrental",
+    "description" : ""
+  }, {
+    "name" : "MONGODB_DVDRENTAL_PORT",
+    "value" : "27017",
+    "description" : ""
+  } ]
+}

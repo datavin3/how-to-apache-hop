@@ -1,0 +1,23 @@
+{
+  "variables" : [ {
+    "name" : "DVDRENTAL_SERVER",
+    "value" : "localhost",
+    "description" : ""
+  }, {
+    "name" : "DVDRENTAL_IMPORT_DATABASE",
+    "value" : "dvdrental_import",
+    "description" : ""
+  }, {
+    "name" : "DVDRENTAL_PORT",
+    "value" : "5432",
+    "description" : ""
+  }, {
+    "name" : "DVDRENTAL_USERNAME",
+    "value" : "postgres",
+    "description" : ""
+  }, {
+    "name" : "DVDRENTAL_PASSWORD",
+    "value" : "postgres",
+    "description" : ""
+  } ]
+}

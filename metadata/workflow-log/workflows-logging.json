@@ -1,0 +1,11 @@
+{
+  "loggingParentsOnly": false,
+  "name": "workflows-logging",
+  "workflowToLog": [],
+  "intervalInSeconds": "30",
+  "executingPeriodically": false,
+  "pipelineFilename": "${PROJECT_HOME}/hop/logging/dvdrental-worklog.hpl",
+  "executingAtEnd": true,
+  "enabled": true,
+  "executingAtStart": true
+}
