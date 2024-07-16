@@ -37,6 +37,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <batch_size/>
     <connection>neo4j-connection</connection>
     <create_indexes>Y</create_indexes>
     <mappings>
@@ -138,6 +139,7 @@
     <out_of_order_allowed>N</out_of_order_allowed>
     <relationship_mappings>
 </relationship_mappings>
+    <return_graph_field/>
     <returning_graph>N</returning_graph>
     <validate_against_model>N</validate_against_model>
     <attributes/>

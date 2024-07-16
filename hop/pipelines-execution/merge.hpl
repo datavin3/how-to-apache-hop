@@ -26,13 +26,13 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>sort-id 2</from>
-      <to>merge-rows</to>
+      <from>generate-5-rows</from>
+      <to>sort-id</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>generate-5-rows</from>
-      <to>sort-id</to>
+      <from>sort-id 2</from>
+      <to>merge-rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -41,32 +41,6 @@
       <enabled>Y</enabled>
     </hop>
   </order>
-  <transform>
-    <name>merge-rows</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>INNER</join_type>
-    <keys_1>
-      <key>id</key>
-    </keys_1>
-    <keys_2>
-      <key>id</key>
-    </keys_2>
-    <transform1>sort-id</transform1>
-    <transform2>sort-id 2</transform2>
-    <attributes/>
-    <GUI>
-      <xloc>624</xloc>
-      <yloc>192</yloc>
-    </GUI>
-  </transform>
   <transform>
     <name>generate-5-rows</name>
     <type>DataGrid</type>
@@ -120,6 +94,32 @@
     <GUI>
       <xloc>288</xloc>
       <yloc>144</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>merge-rows</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <keys_1>
+      <key>id</key>
+    </keys_1>
+    <keys_2>
+      <key>id</key>
+    </keys_2>
+    <transform1>sort-id</transform1>
+    <transform2>sort-id 2</transform2>
+    <attributes/>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>192</yloc>
     </GUI>
   </transform>
   <transform>

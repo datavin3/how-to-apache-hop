@@ -47,13 +47,8 @@
         <field_name>revenue</field_name>
         <key_value>quarter1</key_value>
         <target_aggregation_type>-</target_aggregation_type>
-        <target_currency_symbol/>
-        <target_decimal_symbol/>
-        <target_format/>
-        <target_grouping_symbol/>
         <target_length>-1</target_length>
         <target_name>quarter1</target_name>
-        <target_null_string/>
         <target_precision>0</target_precision>
         <target_type>Integer</target_type>
       </field>
@@ -61,13 +56,8 @@
         <field_name>revenue</field_name>
         <key_value>quarter2</key_value>
         <target_aggregation_type>-</target_aggregation_type>
-        <target_currency_symbol/>
-        <target_decimal_symbol/>
-        <target_format/>
-        <target_grouping_symbol/>
         <target_length>-1</target_length>
         <target_name>quarter2</target_name>
-        <target_null_string/>
         <target_precision>-1</target_precision>
         <target_type>Integer</target_type>
       </field>
@@ -75,13 +65,8 @@
         <field_name>revenue</field_name>
         <key_value>quarter3</key_value>
         <target_aggregation_type>-</target_aggregation_type>
-        <target_currency_symbol/>
-        <target_decimal_symbol/>
-        <target_format/>
-        <target_grouping_symbol/>
         <target_length>-1</target_length>
         <target_name>quarter3</target_name>
-        <target_null_string/>
         <target_precision>-1</target_precision>
         <target_type>Integer</target_type>
       </field>
@@ -89,13 +74,8 @@
         <field_name>revenue</field_name>
         <key_value>quarter4</key_value>
         <target_aggregation_type>-</target_aggregation_type>
-        <target_currency_symbol/>
-        <target_decimal_symbol/>
-        <target_format/>
-        <target_grouping_symbol/>
         <target_length>-1</target_length>
         <target_name>quarter4</target_name>
-        <target_null_string/>
         <target_precision>-1</target_precision>
         <target_type>Integer</target_type>
       </field>

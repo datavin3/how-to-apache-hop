@@ -107,6 +107,10 @@
     </partitioning>
     <fields>
       <field>
+        <currency/>
+        <decimal/>
+        <format/>
+        <group/>
         <length>-1</length>
         <name>test</name>
         <nullif>test</nullif>
@@ -117,7 +121,7 @@
     </fields>
     <interval_in_ms>5000</interval_in_ms>
     <last_time_field>FiveSecondsAgo</last_time_field>
-    <limit>10000000</limit>
+    <limit>10</limit>
     <never_ending>N</never_ending>
     <row_time_field>now</row_time_field>
     <attributes/>

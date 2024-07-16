@@ -22,35 +22,18 @@
   <order>
     <hop>
       <from>generate-5-rows</from>
-      <to>do-nothing</to>
+      <to>nothing</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>generate-5-rows 2</from>
-      <to>do-nothing</to>
+      <to>nothing</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <transform>
-    <name>do-nothing</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <GUI>
-      <xloc>512</xloc>
-      <yloc>160</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>generate-5-rows</name>
-    <type>DataGrid</type>
+    <type>RowGenerator</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -59,53 +42,34 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <data>
-      <line>
-        <item>1</item>
-        <item>test</item>
-      </line>
-      <line>
-        <item>2</item>
-        <item>test</item>
-      </line>
-      <line>
-        <item>3</item>
-        <item>test</item>
-      </line>
-      <line>
-        <item>4</item>
-        <item>test</item>
-      </line>
-      <line>
-        <item>5</item>
-        <item>test</item>
-      </line>
-    </data>
     <fields>
       <field>
+        <currency/>
+        <decimal/>
+        <format/>
+        <group/>
         <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-        <name>id</name>
-        <type>Integer</type>
-      </field>
-      <field>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
         <name>test</name>
+        <nullif>test1</nullif>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
         <type>String</type>
       </field>
     </fields>
+    <interval_in_ms>5000</interval_in_ms>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+    <limit>5000000</limit>
+    <never_ending>N</never_ending>
+    <row_time_field>now</row_time_field>
     <attributes/>
     <GUI>
-      <xloc>304</xloc>
-      <yloc>112</yloc>
+      <xloc>208</xloc>
+      <yloc>80</yloc>
     </GUI>
   </transform>
   <transform>
     <name>generate-5-rows 2</name>
-    <type>DataGrid</type>
+    <type>RowGenerator</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -114,48 +78,42 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <data>
-      <line>
-        <item>1</item>
-        <item>test1</item>
-      </line>
-      <line>
-        <item>2</item>
-        <item>test2</item>
-      </line>
-      <line>
-        <item>3</item>
-        <item>test3</item>
-      </line>
-      <line>
-        <item>4</item>
-        <item>test4</item>
-      </line>
-      <line>
-        <item>5</item>
-        <item>test5</item>
-      </line>
-    </data>
     <fields>
       <field>
         <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-        <name>id</name>
-        <type>Integer</type>
-      </field>
-      <field>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
         <name>test</name>
+        <nullif>test2</nullif>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
         <type>String</type>
       </field>
     </fields>
+    <interval_in_ms>5000</interval_in_ms>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+    <limit>5000000</limit>
+    <never_ending>N</never_ending>
+    <row_time_field>now</row_time_field>
     <attributes/>
     <GUI>
-      <xloc>304</xloc>
-      <yloc>208</yloc>
+      <xloc>208</xloc>
+      <yloc>192</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>nothing</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>144</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
